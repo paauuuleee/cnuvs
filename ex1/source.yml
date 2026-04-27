@@ -1,0 +1,51 @@
+slides2:
+    type: Reference
+    author: Prof. Dr. Marco Zimmerling
+    data: 2026
+    title: "Computer Networks & Distributed Systems Chapter 1: A Quick Tour through Networking"
+
+    
+slides3:
+    type: Reference
+    author: Prof. Dr. Marco Zimmerling
+    date: 2026
+    title: "Computer Networks & Distributed Systems Chapter 3: Internetworking"
+
+osi:
+    type: Web
+    title: "Was ist das OSI-Modell?"
+    author: Cloudflare Inc.
+    url: https://www.cloudflare.com/de-de/learning/ddos/glossary/open-systems-interconnection-model-osi/
+
+tcp_ip_osi:
+    type: Article
+    title: "TCP/IP and OSI Models: A Review of the Fundamental of Modern Networking"
+    author: Masroof Ahmad 
+    date: 2024
+    url: https://k21academy.com/azure-cloud/tcp-ip-and-osi-models-a-review-of-the-fundamental-of-modern-networking/ 
+    
+netbios:
+    type: Web
+    title: "NetBIOS - Network Basic Input/Output System"
+    author: Elektronik Kompendium
+    url: https://www.elektronik-kompendium.de/sites/net/0907221.htm
+    
+
+arp:
+    type: Web
+    title: "ARP - Address Resolution Protocol"
+    author: Elektronik Kompendium
+    url: https://www.elektronik-kompendium.de/sites/net/0901061.htm
+    
+cdm:
+    type: Article
+    author: Ph.D. Shlomi Boutnaru
+    title: "The Networking Journey — CDM (Code Division Multiplexing)"
+    date: 2025
+    url: https://medium.com/@boutnaru/the-networking-journey-cdm-code-division-multiplexing-1ee7924dc5c7
+
+sdm:
+    type: Web
+    title: "Space Division Multiplexing : Diagram, Working, Advantages, Disadvantages & Its Applications"
+    author: EL-PRO-CUS
+    url: https://www.elprocus.com/space-division-multiplexing/

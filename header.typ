@@ -1,0 +1,15 @@
+#let task(label: str, body) = box[
+    #set par(spacing: 0.65em)
+    #show enum: set block(below: 0.65em) 
+    #place(dx: -2em, [(#label)])
+    #body
+]
+
+#let doc(body) = {
+    set page(paper: "a4")
+    set text(font: "Helvetica")
+    show heading: set block(spacing: 1em)
+    set par(spacing: 2em)
+    show bibliography: set heading(level: 2)
+    body
+}
