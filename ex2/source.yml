@@ -1,11 +1,22 @@
 slides3:
-  type: Reference
-  author: Wolfgang Tremmel
-  data: 2026
-  title: "BGP in 90 Minutes: The foundations of Internet Routing"
+    type: Reference
+    author: Wolfgang Tremmel
+    data: 2026
+    title: "BGP in 90 Minutes: The foundations of Internet Routing"
 
 bgp:
-  type: Web
-  author: Cloudflare Inc.
-  url: https://www.cloudflare.com/de-de/learning/security/glossary/what-is-bgp/
-  title: Was ist BGP?
+    type: Web
+    author: Cloudflare Inc.
+    url: https://www.cloudflare.com/de-de/learning/security/glossary/what-is-bgp/
+    title: Was ist BGP?
+
+aspath:
+    type: Web
+    author: 
+    title: "Understanding the AS path and AS path prepending"
+    data: Noction
+    url: https://www.noction.com/blog/as-path-and-as-path-prepending
+
+bgptool:
+    type: Web
+    url: https://bgp.tools
