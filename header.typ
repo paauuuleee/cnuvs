@@ -1,4 +1,4 @@
-#let task(label: str, body) = box[
+#let task(label: str, body) = grid[
     #set par(spacing: 0.65em)
     #show enum: set block(below: 0.65em) 
     #place(dx: -2em, [(#label)])
