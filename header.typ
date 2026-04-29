@@ -8,6 +8,7 @@
 #let doc(body) = {
     set page(paper: "a4")
     set text(font: "Helvetica")
+    show raw: set text(font: "JetBrainsMono NF", size: 10pt)
     show heading: set block(spacing: 1em)
     set par(spacing: 2em)
     show bibliography: set heading(level: 2)
