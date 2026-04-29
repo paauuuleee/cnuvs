@@ -1,0 +1,11 @@
+slides3:
+  type: Reference
+  author: Wolfgang Tremmel
+  data: 2026
+  title: "BGP in 90 Minutes: The foundations of Internet Routing"
+
+bgp:
+  type: Web
+  author: Cloudflare Inc.
+  url: https://www.cloudflare.com/de-de/learning/security/glossary/what-is-bgp/
+  title: Was ist BGP?
