@@ -58,7 +58,7 @@
             [`B -> C -> E -> G -> P -> M`],
             [`B -> A -> C -> E -> G -> P -> L -> M`],
             [`B -> C -> E -> G -> P -> L -> M`]
-        )#colbreak() @slides3[Folie 32]],
+        ) @slides3[p. 32]],
         [Applying rule 3 causes path 1 to be eliminated so that only the router paths of AS Path 2 remain. Remaining routes:
         #list(
             [`B -> A -> C -> E -> F -> P -> M`],
@@ -69,30 +69,30 @@
             [`B -> C -> E -> G -> P -> M`],
             [`B -> A -> C -> E -> G -> P -> L -> M`],
             [`B -> C -> E -> G -> P -> L -> M`]
-        ) @slides3[Folie 30]],
+        ) @slides3[p. 30]],
         [Applying rule 5 eliminates all router paths that contain router L, so that 4 router paths remain. Remaining routes:
         #list(
             [`B -> A -> C -> E -> F -> P -> M`],
             [`B -> C -> E -> F -> P -> M`],
             [ `B -> A -> C -> E -> G -> P -> M`],
             [`B -> C -> E -> G -> P -> M`],
-        ) @slides3[Folie 37]],
+        ) @slides3[p. 37]],
         [Since for every hop there is only one option between eBGP and iBGP this rule doesn't eliminate any path. Remaining routes:
         #list(
             [`B -> A -> C -> E -> F -> P -> M`],
             [`B -> C -> E -> F -> P -> M`],
             [ `B -> A -> C -> E -> G -> P -> M`],
             [`B -> C -> E -> G -> P -> M`],
-        ) @slides3[Folie 39]],
+        ) @slides3[p. 39]],
         [Applying rule 7 eliminates paths internally that are not the shortest way out of the AS, which leaves only the two paths without the A router. Remaining routes:
         #list(
             [`B -> C -> E -> F -> P -> M`],
             [`B -> C -> E -> G -> P -> M`],
-        ) @slides3[Folie 40]],
+        ) @slides3[p. 40]],
         [Rule 9 finally eliminates the route that contains router G since router F has a alphabetically lower router id.
         #list(
             [`B -> C -> E -> F -> P -> M`],
-        ) @slides3[Folie 44]]
+        ) @slides3[p. 44]]
     )
 ]
 
