@@ -15,8 +15,3 @@
 #task(label: "e")[
     The solutions is called tunneling. It is a technique to encapsulate IPv6 packets within IPv4 packets, allowing them to be transmitted over an IPv4 network. @slides3[p. 33]
 ]
-
-== Task 5
-#task(label: "a")[
-  
-]
