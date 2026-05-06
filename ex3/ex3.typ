@@ -67,7 +67,17 @@
 #parbreak() through #parbreak() #highlight[`10101110 01011110 1100110`]`1 11111111`], [`10101110 01011110 1100110`],
         [3], [otherwise], [otherwise] 
     )
+]
 
+#task(label: "b")[
+    `174.94.205.60 -> Link Interface 2`
+]
+
+#task(label: "c")[
+    `174.94.194.175 -> Link Interface 0`
+]
+#task(label: "d")[
+    `174.94.206.127 -> Link Interface 3`
 ]
 
 #bibliography("source.yml", title: "Sources", style: "ieee")
