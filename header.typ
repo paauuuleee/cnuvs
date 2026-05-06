@@ -9,7 +9,6 @@
     CNuvS Ex. #number - Jan Lindauer, Paul Feidieker 
 ]
 
-
 #let doc(body) = {
     set page(paper: "a4")
     set text(font: "Helvetica")
