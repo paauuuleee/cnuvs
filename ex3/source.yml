@@ -3,3 +3,9 @@ slides3:
     author: Prof. Dr. Marco Zimmerling
     date: 2026
     title: "Computer Networks & Distributed Systems Chapter 3: Internetworking"
+
+arp_ndp:
+    type: Web
+    author: Nawaz Dhandala 
+    date: 2026
+    url: https://oneuptime.com/blog/post/2026-03-20-ndp-address-resolution-vs-arp/view

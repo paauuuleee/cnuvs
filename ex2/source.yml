@@ -12,9 +12,8 @@ bgp:
 
 aspath:
     type: Web
-    author: 
+    author: Noction 
     title: "Understanding the AS path and AS path prepending"
-    data: Noction
     url: https://www.noction.com/blog/as-path-and-as-path-prepending
 
 bgptool:

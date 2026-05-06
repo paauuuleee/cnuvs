@@ -10,6 +10,7 @@
 ]
 
 #let doc(body) = {
+    set highlight(fill: rgb("#ffc2f0"))
     set page(paper: "a4")
     set text(font: "Helvetica")
     show raw: set text(font: "JetBrainsMono NF", size: 10pt)
