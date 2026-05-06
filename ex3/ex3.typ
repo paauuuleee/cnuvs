@@ -59,13 +59,13 @@
 
     #table(
         columns: (auto, 1fr, auto),
-        [Link Interface], [Destination Address Range], [Prefix Match],
-        [0], [`10101110 01011110 11000000 00000000` through #parbreak() `10101110 01011110 11000111 11111111`], [],
-        [1], [`10101110 01011110 11001100 10000000`
-through #parbreak() `10101110 01011110 11001100 111111111`], [],
-        [2], [`10101110 01011110 11001100 00000000`
-through #parbreak() `10101110 01011110 11001101 11111111`], [],
-        [3], [otherwise], [] 
+        [LI], [Destination Address Range], [Prefix Match],
+        [0], [#highlight[`10101110 01011110 11000`]`000 00000000` #parbreak() through #parbreak() #highlight[`10101110 01011110 11000`]`111 11111111`], [`10101110 01011110 11000`],
+        [1], [#highlight[`10101110 01011110 11001100 1`]`0000000`
+#parbreak() through #parbreak() #highlight[`10101110 01011110 11001100 1`]`11111111`], [`10101110 01011110 11001100 1`],
+        [2], [#highlight[`10101110 01011110 1100110`]`0 00000000`
+#parbreak() through #parbreak() #highlight[`10101110 01011110 1100110`]`1 11111111`], [`10101110 01011110 1100110`],
+        [3], [otherwise], [otherwise] 
     )
 
 ]
