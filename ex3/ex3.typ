@@ -1,6 +1,18 @@
 #import "../header.typ": *
 #show: doc
 
+#show table.cell: it => {
+    pad(x: 1em, y: 0.5em, align(center)[#it])
+}
+
+#let checkbox(checked: bool) = {
+    if checked {
+        square(size: 0.8em)[#align(center + horizon)[#sym.crossmark]]
+    } else {
+        square(size: 0.8em)[]
+    }
+}
+
 #header(number: 3)
 == Task 4
 #task(label: "a")[
@@ -14,17 +26,13 @@
         }
     }
     
-    #show table.cell: it => {
-        pad(x: 1em, y: 0.5em, align(center)[#it])
-    }
-    
     #table(
         columns: (auto, 1fr, auto, auto),
         [Key characteristic], [Given Description], [IPv4], [IPv6],
-        [Notation], [Hexadecimal (e.g. 2001:db8::1)], [], [#sym.crossmark],
-        [Address length], [32-bit], [#sym.crossmark], [],
-        [Helper protocol], [ARP], [#sym.crossmark], [],
-        [Header structure], [Additional Fields in the header: Traffic Class, Flow Label, Payload Length, Next Header, Hop Limit. Header size is fixed to 40 bytes.], [], [#sym.crossmark] 
+        [Notation], [Hexadecimal (e.g. 2001:db8::1)], [#checkbox(checked: false)], [#checkbox(checked: true)],
+        [Address length], [32-bit], [#checkbox(checked: true)], [#checkbox(checked: false)],
+        [Helper protocol], [ARP], [#checkbox(checked: true)], [#checkbox(checked: false)],
+        [Header structure], [Additional Fields in the header: Traffic Class, Flow Label, Payload Length, Next Header, Hop Limit. Header size is fixed to 40 bytes.], [#checkbox(checked: false)], [#checkbox(checked: true)] 
     ) @slides3[p. ]
 ]
 
@@ -45,18 +53,12 @@
 
 == Task 5
 #task(label: "a")[
-
-
     #show table.cell: it => {
         if it.y == 0 {
             strong(it)
         } else { 
             it
         }
-    }
-    
-    #show table.cell: it => {
-        pad(x: 1em, y: 0.5em, align(center)[#it])
     }
     
     #table(
