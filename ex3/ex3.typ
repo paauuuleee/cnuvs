@@ -139,5 +139,28 @@
     The aggregation is possible because they only differ on bits 25 and 26 (last two bits of the /26 network block). Since the 4 addresses cover all possible combinations of bits 25 & 26 (00, 01, 10, 11) and share the same interface, they can be aggregated to the /24 block.
 ]@slides3[p. 4, 18]
 
+#task(label: "b")[
+    For interface \u{0023}1 the following calculations can be done to determine the routing table entry: #parbreak()
+    First Range: #parbreak()
+    10.40.50.59 ->  #highlight[00001010 001]01000 00110010 00111011 #parbreak()
+    10.60.103.225 -> #highlight[00001010 001]11100 01100111 11100001 #parbreak()
+    As the marked bits are the same for both addresses, we can aggregate them to the address range 10.32.0.0/11. #parbreak()
+    Second Range: #parbreak()
+    10.0.20.8 -> #highlight[00001010 000]00000 00010100 00001000 #parbreak()
+    10.23.150.252 -> #highlight[00001010 000]10111 10010110 11111100 #parbreak()
+    As the marked bits are the same for both addresses, we can aggregate them to the address range 10.0.0.0/11. #parbreak()
+    To see, if the range can be further aggregated, we can compare the two calculated address blocks: #parbreak()
+    10.32.0.0 -> #highlight[00001010 00]1 00000 00000000 00000000 #parbreak()
+    10.0.0.0 -> #highlight[00001010 00]0 00000 00000000 00000000 #parbreak()
+    As the marked bits are the same for both addresses, we can aggregate them to the address range 10.0.0.0/10. #parbreak()
+    So the final routing table entry for interface \u{0023}1 is: 10.0.0.0/10 #parbreak()
+    \
+    For interface \u{0023}2 the following calculations can be done to determine the routing table entry: #parbreak()
+    192.168.10.128 -> #highlight[11000000 10101000 00001010 1]0000000 #parbreak()
+    192.168.10.255 -> #highlight[11000000 10101000 00001010 1]1111111 #parbreak()
+    As the marked bits are the same for both addresses, we can aggregate them to the address range 192.168.10.128/25. #parbreak()
+    So the final routing table entry for interface \u{0023}2 is: 192.168.10.128/25
+]@slides3[p. 13, 14]
+
 #pagebreak()
 #bibliography("source.yml", title: "Sources", style: "ieee")
