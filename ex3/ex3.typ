@@ -106,61 +106,63 @@
     *Host part:* 0.0.1.10 (decimal), `00000000 00000000 000000` #highlight[`01 00001010`] (binary)
     #parbreak()
     Only the marked parts of the binary representation really make out the network and host part of the subnet respectively.
-]@slides3[p. 4, 5]
+    @slides3[p. 4, 5]
+]
 
 #task(label: "b")[
     So the first 23 bit of the address is the network part of the address. Therefore the last 9 bit of the address are the host part and can be used as addresses inside of the network, although we have to correctly subtract the breadcast and network address. Our total of usable addresses sums up to: 
     $
         510 = 512 - 2 = 2^9 - 2
     $
-]@slides3[p. 5]
+    @slides3[p. 5]
+]
 
 #task(label: "c")[
-    The `127.0.0.0/8` block is called the loopback block. It is used to address the same host the message is comming from. It is often called localhost.
-]@localhost
+    The `127.0.0.0/8` block is called the loopback block. It is used to address the same host the message is comming from. It is often called localhost. @localhost
+]
 
 == Task 7
 
 #task(label: "a")[
-    The main problem was a shortage of IP adresses. The end-to-end-principle suggested that every device should have a unique IP address, but with the growth of the internet and the availabale IP adresses in the IPv4 protocol (2^32) this became a problem. NAT was a solution to this by giving local networks only one IP address to the outside "world". However this soultion was contrary to the end-to-end-principle and caused problems for applications that needed to establish direct connections between devices. The solution to solve this issue was the implementation of the IPv6 protocol which has a much larger address space (2^128).
-]@slides3[p. 17, 18, 21]
+    The main problem was a shortage of IP adresses. The end-to-end-principle suggested that every device should have a unique IP address, but with the growth of the internet and the availabale IP adresses in the IPv4 protocol ($2^32$) this became a problem. NAT was a solution to this by giving local networks only one IP address to the outside "world". However this soultion was contrary to the end-to-end-principle and caused problems for applications that needed to establish direct connections between devices. The solution to solve this issue was the implementation of the IPv6 protocol which has a much larger address space ($2^128$). @slides3[p. 17, 18, 21]
+]
 
 #task(label: "b")[
-    Request: #parbreak()
-    10.0.0.4:3345 --> 1.1.1.1:80 #parbreak()
-    Response: #parbreak()
-    1.1.1.1:80 --> 138.76.29.7:5001
-]@slides3[p. 20]
+    *Request:* `10.0.0.4:3345 -> 1.1.1.1:80` #parbreak()
+    *Response:* `1.1.1.1:80 -> 138.76.29.7:5001` #parbreak()
+    @slides3[p. 20]
+]
 
 == Task 8
 
 #task(label: "a")[
     The four addresses can be aggregated to 172.16.1.0/24. #parbreak()
-    The aggregation is possible because they only differ on bits 25 and 26 (last two bits of the /26 network block). Since the 4 addresses cover all possible combinations of bits 25 & 26 (00, 01, 10, 11) and share the same interface, they can be aggregated to the /24 block.
-]@slides3[p. 4, 18]
+    The aggregation is possible because they only differ on bits 25 and 26 (last two bits of the /26 network block). Since the 4 addresses cover all possible combinations of bits 25 & 26 (00, 01, 10, 11) and share the same interface, they can be aggregated to the /24 block. @slides3[p. 4, 18]
+]
 
 #task(label: "b")[
-    For interface \u{0023}1 the following calculations can be done to determine the routing table entry: #parbreak()
+    For interface \#1 the following calculations can be done to determine the routing table entry: #parbreak()
     First Range: #parbreak()
-    10.40.50.59 ->  #highlight[00001010 001]01000 00110010 00111011 #parbreak()
-    10.60.103.225 -> #highlight[00001010 001]11100 01100111 11100001 #parbreak()
+    `10.40.50.59   -> `#highlight[`00001010 001`]`01000 00110010 00111011` #parbreak()
+    `10.60.103.225 -> `#highlight[`00001010 001`]`11100 01100111 11100001` #parbreak()
     As the marked bits are the same for both addresses, we can aggregate them to the address range 10.32.0.0/11. #parbreak()
     Second Range: #parbreak()
-    10.0.20.8 -> #highlight[00001010 000]00000 00010100 00001000 #parbreak()
-    10.23.150.252 -> #highlight[00001010 000]10111 10010110 11111100 #parbreak()
+    `10.0.20.8     -> `#highlight[`00001010 000`]`00000 00010100 00001000` #parbreak()
+    `10.23.150.252 -> `#highlight[`00001010 000`]`10111 10010110 11111100` #parbreak()
     As the marked bits are the same for both addresses, we can aggregate them to the address range 10.0.0.0/11. #parbreak()
     To see, if the range can be further aggregated, we can compare the two calculated address blocks: #parbreak()
-    10.32.0.0 -> #highlight[00001010 00]1 00000 00000000 00000000 #parbreak()
-    10.0.0.0 -> #highlight[00001010 00]0 00000 00000000 00000000 #parbreak()
+    `10.32.0.0 -> `#highlight[`00001010 00`]`1 00000 00000000 00000000` #parbreak()
+    `10.0.0.0  -> `#highlight[`00001010 00`]`0 00000 00000000 00000000` #parbreak()
     As the marked bits are the same for both addresses, we can aggregate them to the address range 10.0.0.0/10. #parbreak()
-    So the final routing table entry for interface \u{0023}1 is: 10.0.0.0/10 #parbreak()
+    So the final routing table entry for interface \#1 is: 10.0.0.0/10 #parbreak()
     \
-    For interface \u{0023}2 the following calculations can be done to determine the routing table entry: #parbreak()
-    192.168.10.128 -> #highlight[11000000 10101000 00001010 1]0000000 #parbreak()
-    192.168.10.255 -> #highlight[11000000 10101000 00001010 1]1111111 #parbreak()
+    For interface \#2 the following calculations can be done to determine the routing table entry: #parbreak()
+    `192.168.10.128 -> `#highlight[`11000000 10101000 00001010 1`]`0000000` #parbreak()
+    `192.168.10.255 -> `#highlight[`11000000 10101000 00001010 1`]`1111111` #parbreak()
     As the marked bits are the same for both addresses, we can aggregate them to the address range 192.168.10.128/25. #parbreak()
-    So the final routing table entry for interface \u{0023}2 is: 192.168.10.128/25
-]@slides3[p. 13, 14]
+    So the final routing table entry for interface \#2 is: 192.168.10.128/25 #parbreak()
+    @slides3[p. 13, 14]
+]
 
 #pagebreak()
 #bibliography("source.yml", title: "Sources", style: "ieee")
