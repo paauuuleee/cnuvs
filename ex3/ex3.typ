@@ -132,5 +132,12 @@
     1.1.1.1:80 --> 138.76.29.7:5001
 ]@slides3[p. 20]
 
+== Task 8
+
+#task(label: "a")[
+    The four addresses can be aggregated to 172.16.1.0/24. #parbreak()
+    The aggregation is possible because they only differ on bits 25 and 26 (last two bits of the /26 network block). Since the 4 addresses cover all possible combinations of bits 25 & 26 (00, 01, 10, 11) and share the same interface, they can be aggregated to the /24 block.
+]@slides3[p. 4, 18]
+
 #pagebreak()
 #bibliography("source.yml", title: "Sources", style: "ieee")
