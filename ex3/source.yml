@@ -9,3 +9,9 @@ arp_ndp:
     author: Nawaz Dhandala 
     date: 2026
     url: https://oneuptime.com/blog/post/2026-03-20-ndp-address-resolution-vs-arp/view
+
+localhost:
+    type: Web
+    author: Kolade Chris
+    date: 2026
+    url: https://www.freecodecamp.org/news/what-is-localhost/

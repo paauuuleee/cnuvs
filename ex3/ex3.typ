@@ -106,20 +106,31 @@
     *Host part:* 0.0.1.10 (decimal), `00000000 00000000 000000` #highlight[`01 00001010`] (binary)
     #parbreak()
     Only the marked parts of the binary representation really make out the network and host part of the subnet respectively.
-]
+]@slides3[p. 4, 5]
 
 #task(label: "b")[
     So the first 23 bit of the address is the network part of the address. Therefore the last 9 bit of the address are the host part and can be used as addresses inside of the network, although we have to correctly subtract the breadcast and network address. Our total of usable addresses sums up to: 
     $
         510 = 512 - 2 = 2^9 - 2
     $
-]
+]@slides3[p. 5]
 
 #task(label: "c")[
     The `127.0.0.0/8` block is called the loopback block. It is used to address the same host the message is comming from. It is often called localhost.
-]
+]@localhost
 
 == Task 7
+
+#task(label: "a")[
+    The main problem was a shortage of IP adresses. The end-to-end-principle suggested that every device should have a unique IP address, but with the growth of the internet and the availabale IP adresses in the IPv4 protocol (2^32) this became a problem. NAT was a solution to this by giving local networks only one IP address to the outside "world". However this soultion was contrary to the end-to-end-principle and caused problems for applications that needed to establish direct connections between devices. The solution to solve this issue was the implementation of the IPv6 protocol which has a much larger address space (2^128).
+]@slides3[p. 17, 18, 21]
+
+#task(label: "b")[
+    Request: #parbreak()
+    10.0.0.4:3345 --> 1.1.1.1:80 #parbreak()
+    Response: #parbreak()
+    1.1.1.1:80 --> 138.76.29.7:5001
+]@slides3[p. 20]
 
 #pagebreak()
 #bibliography("source.yml", title: "Sources", style: "ieee")
