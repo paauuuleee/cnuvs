@@ -20,7 +20,7 @@
 ]
 
 #task(label: "c")[
-    To garantee that a node has found the shortest path to every other node in the network, we have to garantee that all paths to all nodes have been propagated. Each node has two neighbors so the first to update rounds are caused by a message from both neighbors propagating the distance to the opposing node from the one we picked. This opposing node also propagates its initial state two the two neighbors that it shares with our node. Since there could potentially be a shorter path to one of our neighbors via the other neighbor and that the opposing node we also have to consider those two update rounds to really garantee the shortest path to each node. So in total we need 4 update rounds for each node to be sure.
+    To guarantee that a node has found the shortest path to every other node in the network, we have to garantee that all paths to all nodes have been propagated. Each node has two neighbors so the first to update rounds are caused by a message from both neighbors propagating the distance to the opposing node from the one we picked. This opposing node also propagates its initial state two the two neighbors that it shares with our node. Since there could potentially be a shorter path to one of our neighbors via the other neighbor and that the opposing node we also have to consider those two update rounds to really garantee the shortest path to each node. So in total we need 4 update rounds for each node to be sure.
 ]
 
 #task(label: "d")[
