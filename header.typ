@@ -19,3 +19,11 @@
     show bibliography: set heading(level: 2)
     body
 }
+
+#let checkbox(checked: bool) = {
+    if checked {
+        square(size: 0.8em)[#align(center + horizon)[#sym.crossmark]]
+    } else {
+        square(size: 0.8em)[]
+    }
+}
