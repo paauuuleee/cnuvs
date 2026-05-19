@@ -50,7 +50,6 @@
 #let bc(value) = table.cell(fill: blue)[#value] // colors the cell blue 
 #let oc(value) = table.cell(fill: orange)[#value] // colors the cell orange
 #let rs(value) = [#text(fill: red, strike([#value]))] // red text striked through
-#let c(value) = [#value]
 
 = Task 3: Distance Vector Routing
 
