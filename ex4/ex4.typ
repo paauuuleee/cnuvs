@@ -28,6 +28,146 @@
     @slides2[p. 37, 39]
 ]
 
+== Task 4
+#task(label: "a")[
+    #align(center)[
+        #dvrtable(
+            $D^A$,
+            ("B", "D"),
+            ("B", "C", "D", "E", "F"),
+            oc(2), inf,
+            inf, inf,
+            inf, oc(6),
+            inf, inf,
+            inf, inf
+        )
+        #dvrtable(
+            $D^B$,
+            ("A", "C", "D"),
+            ("A", "C", "D", "E", "F"),
+            oc(2), inf, inf,
+            inf, oc(2), inf,
+            inf, inf, oc(1),
+            inf, inf, inf,
+            inf, inf, inf
+        )
+        #dvrtable(
+            $D^C$,
+            ("B", "D"),
+            ("A", "B", "D", "E", "F"),
+            inf, inf,
+            oc(2), inf,
+            inf, oc(3),
+            inf, inf,
+            inf, inf
+        )
+    ]
+
+    #align(center)[
+        #dvrtable(
+            $D^D$,
+            ("A", "B", "C", "E", "F"),
+            ("A", "B", "C", "E", "F"),
+            oc(6), inf, inf, inf, inf,
+            inf, oc(1), inf, inf, inf,
+            inf, inf, oc(3), inf, inf,
+            inf, inf, inf, oc(2), inf,
+            inf, inf, inf, inf, oc(3)
+        )
+        #dvrtable(
+            $D^E$,
+            ("D"),
+            ("A", "B", "C", "D", "F"),
+            inf,
+            inf,
+            inf,
+            oc(2),
+            inf
+        )
+        #dvrtable(
+            $D^F$,
+            ("D"),
+            ("A", "B", "C", "D", "E"),
+            inf,
+            inf,
+            inf,
+            oc(3),
+            inf
+        )
+    ]
+]
+
+#task(label: "b")[
+
+    Round 1:
+
+    #align(center)[
+        #dvrtable(
+            $D^A$,
+            ("B", "D"),
+            ("B", "C", "D", "E", "F"),
+            [2], oc(7),
+            bc(4), oc(9),
+            bc(3), [6],
+            inf, bc(8),
+            inf, bc(9)
+        )
+        #dvrtable(
+            $D^B$,
+            ("A", "C", "D"),
+            ("A", "C", "D", "E", "F"),
+            [2], inf, oc(7),
+            inf, [2], oc(4),
+            oc(8), oc(5), [1],
+            inf, inf, bc(3),
+            inf, inf, bc(4)
+        )
+        #dvrtable(
+            $D^C$,
+            ("B", "D"),
+            ("A", "B", "D", "E", "F"),
+            bc(4), oc(9),
+            [2], oc(4),
+            oc(3), [3],
+            inf, bc(5),
+            inf, bc(6)
+        )
+    ]
+
+    #align(center)[
+        #dvrtable(
+            $D^D$,
+            ("A", "B", "C", "E", "F"),
+            ("A", "B", "C", "E", "F"),
+            [6], bc(3), inf, inf, inf,
+            oc(8), [1], oc(5), inf, inf,
+            inf, oc(3), [3], inf, inf,
+            inf, inf, inf, [2], inf,
+            inf, inf, inf, inf, [3]
+        )
+        #dvrtable(
+            $D^E$,
+            ("D"),
+            ("A", "B", "C", "D", "F"),
+            bc(8),
+            bc(3),
+            bc(5),
+            [2],
+            bc(5)
+        )
+        #dvrtable(
+            $D^F$,
+            ("D"),
+            ("A", "B", "C", "D", "E"),
+            bc(9),
+            bc(4),
+            bc(6),
+            [3],
+            bc(5)
+        )
+    ]
+]
+
 
 == Task 5
 
