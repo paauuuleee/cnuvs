@@ -304,10 +304,282 @@
     ]
 ]
 
+#task(label: "c")[
+
+    Initialization:
+
+    #align(center)[
+        #dvrtable(
+            $D^A$,
+            ("B", "D"),
+            ("B", "C", "D", "E", "F"),
+            oc(2), inf,
+            inf, inf,
+            inf, oc(1),
+            inf, inf,
+            inf, inf
+        )
+        #dvrtable(
+            $D^B$,
+            ("A", "C", "D"),
+            ("A", "C", "D", "E", "F"),
+            oc(2), inf, inf,
+            inf, oc(2), inf,
+            inf, inf, oc(1),
+            inf, inf, inf,
+            inf, inf, inf
+        )
+        #dvrtable(
+            $D^C$,
+            ("B", "D"),
+            ("A", "B", "D", "E", "F"),
+            inf, inf,
+            oc(2), inf,
+            inf, oc(3),
+            inf, inf,
+            inf, inf
+        )
+    ]
+
+    #align(center)[
+        #dvrtable(
+            $D^D$,
+            ("A", "B", "C", "E", "F"),
+            ("A", "B", "C", "E", "F"),
+            oc(1), inf, inf, inf, inf,
+            inf, oc(1), inf, inf, inf,
+            inf, inf, oc(3), inf, inf,
+            inf, inf, inf, oc(2), inf,
+            inf, inf, inf, inf, oc(3)
+        )
+        #dvrtable(
+            $D^E$,
+            ("D"),
+            ("A", "B", "C", "D", "F"),
+            inf,
+            inf,
+            inf,
+            oc(2),
+            inf
+        )
+        #dvrtable(
+            $D^F$,
+            ("D"),
+            ("A", "B", "C", "D", "E"),
+            inf,
+            inf,
+            inf,
+            oc(3),
+            inf
+        )
+    ]
+
+    Round 1:
+
+    #align(center)[
+        #dvrtable(
+            $D^A$,
+            ("B", "D"),
+            ("B", "C", "D", "E", "F"),
+            [2], oc(2),
+            bc(4), bc(4),
+            oc(3), [1],
+            inf, bc(3),
+            inf, bc(4)
+        )
+        #dvrtable(
+            $D^B$,
+            ("A", "C", "D"),
+            ("A", "C", "D", "E", "F"),
+            [2], inf, oc(2),
+            inf, [2], oc(4),
+            oc(3), oc(5), [1],
+            inf, inf, bc(3),
+            inf, inf, bc(4)
+        )
+        #dvrtable(
+            $D^C$,
+            ("B", "D"),
+            ("A", "B", "D", "E", "F"),
+            bc(4), bc(4),
+            [2], oc(4),
+            oc(3), [3],
+            inf, bc(5),
+            inf, bc(6)
+        )
+    ]
+
+    #align(center)[
+        #dvrtable(
+            $D^D$,
+            ("A", "B", "C", "E", "F"),
+            ("A", "B", "C", "E", "F"),
+            [1], oc(3), inf, inf, inf,
+            oc(3), [1], oc(5), inf, inf,
+            inf, oc(3), [3], inf, inf,
+            inf, inf, inf, [2], inf,
+            inf, inf, inf, inf, [3]
+        )
+        #dvrtable(
+            $D^E$,
+            ("D"),
+            ("A", "B", "C", "D", "F"),
+            bc(3),
+            bc(3),
+            bc(5),
+            [2],
+            bc(5)
+        )
+        #dvrtable(
+            $D^F$,
+            ("D"),
+            ("A", "B", "C", "D", "E"),
+            bc(4),
+            bc(4),
+            bc(6),
+            [3],
+            bc(5)
+        )
+    ]
+
+    Round 2:
+
+    #align(center)[
+        #dvrtable(
+            $D^A$,
+            ("B", "D"),
+            ("B", "C", "D", "E", "F"),
+            [2], [2],
+            [4], [4],
+            [3], [1],
+            oc(5), [3],
+            oc(6), [4]
+        )
+        #dvrtable(
+            $D^B$,
+            ("A", "C", "D"),
+            ("A", "C", "D", "E", "F"),
+            [2], oc(6), [2],
+            oc(6), [2], [4],
+            [3], [5], [1],
+            oc(5), oc(7), bc(3),
+            oc(6), oc(8), bc(4)
+        )
+        #dvrtable(
+            $D^C$,
+            ("B", "D"),
+            ("A", "B", "D", "E", "F"),
+            [4], [4],
+            [2], [4],
+            [3], [3],
+            oc(5), [5],
+            oc(6), [6]
+        )
+    ]
+
+    #align(center)[
+        #dvrtable(
+            $D^D$,
+            ("A", "B", "C", "E", "F"),
+            ("A", "B", "C", "E", "F"),
+            [1], [3], oc(7), oc(5), oc(7),
+            [3], [1], [5], oc(5), oc(7),
+            oc(5), [3], [3], oc(7), oc(9),
+            oc(4), oc(4), oc(8), [2], oc(8),
+            oc(5), oc(5), oc(9), oc(7), [3]
+        )
+        #dvrtable(
+            $D^E$,
+            ("D"),
+            ("A", "B", "C", "D", "F"),
+            [3],
+            [3],
+            [5],
+            [2],
+            [5]
+        )
+        #dvrtable(
+            $D^F$,
+            ("D"),
+            ("A", "B", "C", "D", "E"),
+            [4],
+            [4],
+            [6],
+            [3],
+            [5]
+        )
+    ]
+
+    Round 3:
+
+    #align(center)[
+        #dvrtable(
+            $D^A$,
+            ("B", "D"),
+            ("B", "C", "D", "E", "F"),
+            [2], [2],
+            [4], [4],
+            [3], [1],
+            [5], [3],
+            [6], [4]
+        )
+        #dvrtable(
+            $D^B$,
+            ("A", "C", "D"),
+            ("A", "C", "D", "E", "F"),
+            [2], [6], [2],
+            [6], [2], [4],
+            [3], [5], [1],
+            [5], [7], [3],
+            [6], [8], [4]
+        )
+        #dvrtable(
+            $D^C$,
+            ("B", "D"),
+            ("A", "B", "D", "E", "F"),
+            [4], [4],
+            [2], [4],
+            [3], [3],
+            [5], [5],
+            [6], [6]
+        )
+    ]
+
+    #align(center)[
+        #dvrtable(
+            $D^D$,
+            ("A", "B", "C", "E", "F"),
+            ("A", "B", "C", "E", "F"),
+            [1], [3], [7], [5], [7],
+            [3], [1], [5], [5], [7],
+            [5], [3], [3], [7], [9],
+            [4], [4], [8], [2], [8],
+            [5], [5], [9], [7], [3]
+        )
+        #dvrtable(
+            $D^E$,
+            ("D"),
+            ("A", "B", "C", "D", "F"),
+            [3],
+            [3],
+            [5],
+            [2],
+            [5]
+        )
+        #dvrtable(
+            $D^F$,
+            ("D"),
+            ("A", "B", "C", "D", "E"),
+            [4],
+            [4],
+            [6],
+            [3],
+            [5]
+        )
+    ]
+]
 
 == Task 5
-
-
 
 #task(label: "a")[
     #align(center)[
