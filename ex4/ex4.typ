@@ -13,9 +13,9 @@
 
 #task(label: "b")[
     #enum(
-        [Distance vector routing has a limited view. The routers only know what direct neighbors tell them. Link state routing has a global view. Each router knows the entire network topology.],
-        [Distance vector routing uses the Bellman-Ford algorithm. Link state routing uses Dijkstra's algorithm.],
-        [Distance vector routing is slow to adapt to changes. It periodically broadcasts the entire routing table to its neighbors. Link state routing is faster to adapt to changes. It only sends updates when there are changes in the network topology.]
+        [Distance vector routing has a limited view. The routers only know what direct neighbors tell them. Link state routing has a global view. Each router knows the entire network topology. @slides2[p. 26, 43]],
+        [Distance vector routing uses the RIP algorithm. Link state routing uses Dijkstra's algorithm. @slides2[p. 24, 44]],
+        [Distance vector routing is slow to adapt to changes. It periodically broadcasts the entire routing table to its neighbors. Link state routing is faster to adapt to changes. It only sends updates when there are changes in the network topology. @slides2[p. 45]]
     )
 ]
 
