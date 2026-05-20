@@ -88,7 +88,7 @@
 ]
 
 #task(label: "b")[
-
+  The internet approach to identify remote processes is to use abstract service addresses called Protocol Ports. Processes can register or ask for ports. The system then keeps all packets in queue for a port until the according process accesses them. @slides4[p. 17]
 ]
 
 #pagebreak()
