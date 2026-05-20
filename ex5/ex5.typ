@@ -40,6 +40,8 @@
     }
 }
 
+#show table: set block(breakable: false) 
+
 #task(label: "a")[
     #table(
         columns: (auto, 1fr),
@@ -84,11 +86,15 @@
 == Task 5
 
 #task(label: "a")[
-  The two primary protocols are TCP and UDP. TCP includes services like congestion control, flow control and connection setup / teardown. UDP doesn't really provide any services except the no-frills extension of "best-effort" IP which cuts away the overhead of TCP. TCP is considered a connection oriented transport protocol, UDP a connectionless transport protocol. @slides4[p. 7]
+    The two primary protocols are TCP and UDP. TCP includes services like congestion control, flow control and connection setup / teardown. UDP doesn't really provide any services except the no-frills extension of "best-effort" IP which cuts away the overhead of TCP. TCP is considered a connection oriented transport protocol, UDP a connectionless transport protocol. @slides4[p. 7]
 ]
 
 #task(label: "b")[
-  The internet approach to identify remote processes is to use abstract service addresses called Protocol Ports. Processes can register or ask for ports. The system then keeps all packets in queue for a port until the according process accesses them. @slides4[p. 17]
+    The internet approach to identify remote processes is to use abstract service addresses called Protocol Ports. Processes can register or ask for ports. The system then keeps all packets in queue for a port until the according process accesses them. @slides4[p. 17]
+]
+
+#task(label: "c")[
+    The network layer provides a communication abstraction that models the logical communication between host machines. The transport layer, on the other hand, models the logical communication between the two running processes on the host machines. Therefore the transport layer is reliant on the network layer and enhances it by isolating the communication between processes in a session from other network communication that is being processed in parallel. @slides4[p. 8]
 ]
 
 #pagebreak()
