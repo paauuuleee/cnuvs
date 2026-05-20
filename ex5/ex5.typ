@@ -34,7 +34,11 @@
 == Task 5
 
 #task(label: "a")[
-  
+  The two primary protocols are TCP and UDP. TCP includes services like congestion control, flow control and connection setup / teardown. UDP doesn't really provide any services except the no-frills extension of "best-effort" IP which cuts away the overhead of TCP. TCP is considered a connection oriented service, UDP a connectionless service. @slides4[p. 7]
+]
+
+#task(label: "b")[
+
 ]
 
 #pagebreak()

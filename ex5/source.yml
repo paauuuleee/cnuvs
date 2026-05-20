@@ -4,6 +4,12 @@ slides2:
     date: 2026
     title: "Computer Networks & Distributed Systems Chapter 2: Routing"
 
+slides4:
+    type: Reference
+    author: Prof. Dr. Zsolt Istvan
+    date: 2026
+    title: "Computer Networks & Distributed Systems Chapter 4: Transport Layer"
+
 freenet:
     type: web
     author: Freenet Org.
