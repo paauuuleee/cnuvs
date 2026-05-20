@@ -31,6 +31,56 @@
 
 == Task 4
 
+#show table.cell: it => {
+    let c = pad(x: 1em)[#it]
+    if it.x == 0 {
+        strong(c)
+    } else {
+        c
+    }
+}
+
+#task(label: "a")[
+    #table(
+        columns: (auto, 1fr),
+        [Route start/end],      [$C -> D$],
+        [Overlay route],        [$C -> D$],
+        [Underlay hop count],   [$C -> D: 4; sum = 4$],
+        [Shortest IP path],     [$4$],
+        [Stretch factor],       [$1 = 4 div 4$]
+    )    
+]
+#task(label: "b")[
+    #table(
+        columns: (auto, 1fr),
+        [Route start/end],      [$B -> D$],
+        [Overlay route],        [$B -> C -> D$],
+        [Underlay hop count],   [$B -> C: 2, C -> D: 4; sum = 6$],
+        [Shortest IP path],     [$3$],
+        [Stretch factor],       [$2 = 6 div 3$]
+    )    
+]
+#task(label: "c")[
+    #table(
+        columns: (auto, 1fr),
+        [Route start/end],      [$F -> C$],
+        [Overlay route],        [$F -> B -> C$],
+        [Underlay hop count],   [$F -> B: 4, B -> C: 2; sum = 6$],
+        [Shortest IP path],     [$5$],
+        [Stretch factor],       [$1.2 = 6 div 5$]
+    )    
+]
+#task(label: "d")[
+    #table(
+        columns: (auto, 1fr),
+        [Route start/end],      [$E -> F$],
+        [Overlay route],        [$E -> D -> C -> B -> F$],
+        [Underlay hop count],   [$E -> D: 2, D -> C: 4; C -> B: 2, B -> F: 4; sum = 12$],
+        [Shortest IP path],     [$3$],
+        [Stretch factor],       [$4 = 12 div 3$]
+    )    
+]
+
 == Task 5
 
 #task(label: "a")[
