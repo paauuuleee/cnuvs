@@ -3,3 +3,15 @@ slides2:
     author: Prof. Dr. Marco Zimmerling
     date: 2026
     title: "Computer Networks & Distributed Systems Chapter 2: Routing"
+
+freenet:
+    type: web
+    author: Freenet Org.
+    date: 2026
+    url: https://freenet.org/
+
+onionshare:
+    type: web
+    author: OnionShare Org.
+    date: 2026
+    url: https://onionshare.org/

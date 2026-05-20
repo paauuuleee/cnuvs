@@ -20,6 +20,15 @@
   @slides2[p. 97, 98]
 ]
 
+#task(label: "d")[
+  An overlay network is needed for Peer-to-Peer because in P2P there must me a direct connection between to communication partners. #parbreak()
+  Two applications that use overlay networks are: #parbreak()
+  #enum(
+    [Freenet @freenet],
+    [OnionShare @onionshare]
+  )
+]
+
 == Task 4
 
 == Task 5
