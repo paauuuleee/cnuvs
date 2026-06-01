@@ -1,0 +1,11 @@
+slides4:
+    type: Reference
+    author: Prof. Dr. Zsolt Istvan
+    date: 2026
+    title: "Computer Networks & Distributed Systems Chapter 4: Transport Layer"
+
+dnschecker:
+    type: Web
+    date: 2026
+    url: "https://dnschecker.org"
+    title: "DNS Checker"
