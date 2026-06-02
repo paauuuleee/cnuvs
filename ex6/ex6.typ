@@ -39,7 +39,9 @@
 ]
 
 #task(label: "c")[
-  
+  If both requests use UDP, 1 socket is needed on the server side, since UDP is connectionless and does not require a dedicated connection for each sender. The server can simply listen on the same port for incoming UDP packets from both clients. #parbreak()
+  If both requests use TCP, 2 sockets are needed on the server side, since TCP is connection-oriented and requires a dedicated connection for each sender. The server would need to create a seperate socket for each client to handle the TCP connection. #parbreak()
+  @slides4[Part 1, p. 9]
 ]
 
 #task(label: "d")[
