@@ -17,7 +17,7 @@
 ]
 
 #task(label: "c")[
-    
+    The three way handshake only works if each of the handshake messages are properly recieved in time by the respective party. Since communication channels are propabilistic channels, we can't garantee that each message arrives correctly. From there several problems arise. The ACK-message, the second DR-message or even the first DR-message after a resend can fail to arrive. Each of these problems is solved by setting optimistic timeouts that trigger a retransmission of the pontentially failed message. @slides4[p. 7]
 ]
 
 #task(label: "d")[
