@@ -76,13 +76,11 @@
               &approx 0.0057 "ms" + 168 "ms" \
               &approx 168.0057 "ms" $
 
-  \
   For the last packet we do not need to wait for the ACK to return:
 
   $ T_"total" &= (N - 1) dot t_"cycle" + t_"tx" ("packet") + t_"prop" \
              &= 291 times 168.0057 "ms" + 2.8338 mu"s" + 84 "ms" \
              &= 48 thin 889.6 "ms" + 84.0028 "ms" $
-  \
   $ T_"total" approx 48 thin 973.6 "ms" approx bold(48.9736 "s") $
 ]
 
