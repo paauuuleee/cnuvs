@@ -17,7 +17,7 @@
 ]
 
 #task(label: "c")[
-    The three way handshake only works if each of the handshake messages are properly recieved in time by the respective party. Since communication channels are propabilistic channels, we can't garantee that each message arrives correctly. From there several problems arise. The ACK-message, the second DR-message or even the first DR-message after a resend can fail to arrive. Each of these problems is solved by setting optimistic timeouts that trigger a retransmission of the pontentially failed message. @slides4[p. 7]
+    The three-way handshake only works if each of the handshake messages are properly recieved in time by the respective party. Since communication channels are propabilistic channels, we can't guarantee that each message arrives correctly. From there several problems arise. The ACK-message, the second DR-message or even the first DR-message after a resend can fail to arrive. Each of these problems is solved by setting optimistic timeouts that trigger a retransmission of the pontentially failed message. @slides4[p. 7]
 ]
 
 #task(label: "d")[
@@ -28,7 +28,7 @@
 == Task 5
 
 #task(label: "a")[
-  
+    The IP address is a defining part of the IP protocol on the network layer, while the networking port is a responsibility of the transport layer. The OSI model advocates for clear abstractions that encapsulate finer grain technicalities away from higher layers. Since the internet is older than the OSI model it still combines IP addresses and ports as socket identifiers. This has some major upsides like defining unique indefications for application endpoints and also enables are more efficient multiplexing between concurrently running network applications. @slides4[Part 1, p. 18, 19]
 ]
 
 #task(label: "b")[
