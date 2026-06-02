@@ -34,7 +34,8 @@
 #task(label: "b")[
   Using PIDs would be problematic because processes can are created and killed dynamically, which means that the PID associated with a particular service may change over time.
   A device may also be rebooted which usually changes the PID. In these cases, everytime the PID changes, the new PID would need to be announeced to the network. #parbreak()
-  Instead, abstract service addresses called Protocol Ports are used. @slides4[Part 1, p. 17]
+  Instead, abstract service addresses called Protocol Ports are used. #parbreak()
+  @slides4[Part 1, p. 17]
 ]
 
 #task(label: "c")[
