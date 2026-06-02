@@ -9,3 +9,9 @@ dnschecker:
     date: 2026
     url: "https://dnschecker.org"
     title: "DNS Checker"
+
+ports:
+    type: Web
+    date: 2026
+    url: "https://www.msxfaq.de/netzwerk/grundlagen/highportrangerisiko.html"
+    title: "Highportrange Risiko"

@@ -40,7 +40,8 @@
 ]
 
 #task(label: "d")[
-  
+  The default port range for registered ports supported by Windows 10 is from 1024 to 49151. @ports
+  The default port range for ephemeral ports supported by Windows 10 is from 49152 to 65535. @ports
 ]
 
 == Task 6
