@@ -3,3 +3,9 @@ slides4:
     author: Prof. Dr. Marco Zimmerling
     date: 2026
     title: "CNuvS 04: Transport Layer"
+
+warning:
+    type: web
+    url: https://www.sciencedirect.com/topics/computer-science/random-early-detection
+    date: 2026
+    author: "ScienceDirect"
