@@ -29,5 +29,9 @@
     @quic
 ]
 
+#task(label: "c")[
+    When a TCP connection is terminated, the sender sends a FIN (finish) packet to the receiver, indicating that it has finished sending data. The receiver responds with an ACK (acknowledgment) packet to acknowledge the receipt of the FIN packet. The receiver then sends its own FIN packet to indicate that it has also finished sending data. Finally, the sender responds with an ACK packet to acknowledge the receipt of the receiver's FIN packet. #parbreak() @slides4[p. 12, 13]
+]
+
 #pagebreak()
 #bibliography("source.yml", title: "Sources", style: "ieee")

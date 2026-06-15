@@ -15,3 +15,9 @@ quic:
   date: "2026"
   author: "Elektronik-Kompendium.de"
   url: "https://www.elektronik-kompendium.de/sites/net/2210241.htm"
+
+slides4:
+    type: Reference
+    author: Prof. Dr. Marco Zimmerling
+    date: 2026
+    title: "CNuvS 04: Transport Layer"
