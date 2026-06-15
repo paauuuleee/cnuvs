@@ -7,8 +7,16 @@
 == Task 3
 
 #task(label: "a")[
-  Source port: 1337 decimal = 0x0539 hexadecimal #parbreak()
-  Destination port: 4200 decimal = 0x1068 hexadecimal #parbreak()
+  Source port: 1337 decimal = 05 39 hexadecimal #parbreak()
+  Destination port: 4200 decimal = 10 68 hexadecimal #parbreak()
+]
+
+#task(label: "b")[
+    Encoded message: 52 68 65 69 6e 73 74 72 61 c3 9f 65 
+]
+
+#task(label: "c")[
+    
 ]
 
 == Task 4
