@@ -1,0 +1,11 @@
+tcp8080:
+  type: web
+  date: "2026"
+  author: "ScaniteX"
+  url: "https://scanitex.com/en/resources/ports/tcp/8080"
+
+udp514:
+  type: web
+  date: "2026"
+  author: "Colin Cohen"
+  url: "https://www.cbtnuggets.com/common-ports/what-is-port-514"
