@@ -6,6 +6,11 @@
 
 == Task 3
 
+#task(label: "a")[
+  Source port: 1337 decimal = 0x0539 hexadecimal #parbreak()
+  Destination port: 4200 decimal = 0x1068 hexadecimal #parbreak()
+]
+
 == Task 4
 
 #task(label: "a")[
