@@ -34,10 +34,10 @@
 #task(label: "d")[
   #figure(
     udp_segment_table(row_data_count: 3,
-        [05 39], [10 68], 
-        [00 14], [4E 6A],
-        [52 68 65 69 6E 73 74 72 61 C3 9F 65]
-     )
+      table.cell(colspan: 2)[05 39], table.cell(colspan: 2)[10 68], 
+      table.cell(colspan: 2)[00 14], table.cell(colspan: 2)[4E 6A],
+      table.cell(colspan: 4)[52 68 65 69 6E 73 74 72 61 C3 9F 65]
+    )
   )
 ]
 
