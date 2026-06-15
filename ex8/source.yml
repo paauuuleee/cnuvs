@@ -9,3 +9,9 @@ udp514:
   date: "2026"
   author: "Colin Cohen"
   url: "https://www.cbtnuggets.com/common-ports/what-is-port-514"
+
+quic:
+  type: web
+  date: "2026"
+  author: "Elektronik-Kompendium.de"
+  url: "https://www.elektronik-kompendium.de/sites/net/2210241.htm"
