@@ -12,7 +12,7 @@
 ]
 
 #task(label: "b")[
-    Encoded message: 52 68 65 69 6e 73 74 72 61 c3 9f 65 
+    Encoded message: 52 68 65 69 6E 73 74 72 61 C3 9F 65 
 ]
 
 #task(label: "c")[
@@ -28,6 +28,16 @@
       [B0 6C], [`61 C3` (payload block 5)], [12 30],
       [12 30], [`9F 65` (payload block 6)], [B1 95],
     )
+  )
+]
+
+#task(label: "d")[
+  #figure(
+    udp_segment_table(row_data_count: 3,
+        [05 39], [10 68], 
+        [00 14], [4E 6A],
+        [52 68 65 69 6E 73 74 72 61 C3 9F 65]
+     )
   )
 ]
 
