@@ -16,7 +16,19 @@
 ]
 
 #task(label: "c")[
-    
+  #figure(
+    udp_checksum_table(rows: 9,
+      [00 00 (initial value)], [`05 39` (source port)], [`05 39`],
+      [05 39], [`10 68` (destination port)], [15 A1],
+      [15 A1], [`00 14` (length)], [15 B5],
+      [15 B5], [`52 68` (payload block 1)], [68 1D],
+      [68 1D], [`65 69` (payload block 2)], [CD 86],
+      [CD 86], [`6E 73` (payload block 3)], [3B FA],
+      [3B FA], [`74 72` (payload block 4)], [B0 6C],
+      [B0 6C], [`61 C3` (payload block 5)], [12 30],
+      [12 30], [`9F 65` (payload block 6)], [B1 95],
+    )
+  )
 ]
 
 == Task 4
