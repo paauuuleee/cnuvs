@@ -1,7 +1,7 @@
 // table for calculating udp checksum
 #let udp_checksum_table(rows: 13,..args) = {
   table(
-      columns: (.6fr, .6fr, 1fr),
+      columns: (.8fr, 0.8fr, 1fr),
       rows: ((3em), rows*(2em,)).flatten(),
       align: left+horizon,
       [*Last Value*\ (hexadecimal notation)], [*Added Value*\ (hexadecimal notation)], [*Accumulator*\ (hexadecimal notation)],
