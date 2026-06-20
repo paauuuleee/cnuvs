@@ -17,7 +17,7 @@
   \
   *A* and *S* are noted as follows: #parbreak()
   \
-  - *M*: Exponential process
+  - *M*: Exponential process (Markovian)
   - *D*: Deterministic
   - *G*: General
 
@@ -25,7 +25,15 @@
 ]
 
 #task(label: "b")[
+  The notation is structured as A/S/m, where each component gives a specific rule about how the system behaves. #parbreak()
+  \
+  The first *M* in M/M/1 represents *A*, an exponential process, specifically a Markovian. #parbreak()
+  The second *M* represents *S*, also an exponential process, specifically a Markovian. #parbreak()
+  The *1* stands for *m*, the number of servers.
+]
 
+#task(label: "c")[
+  
 ]
 
 #pagebreak()
