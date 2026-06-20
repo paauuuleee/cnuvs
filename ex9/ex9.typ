@@ -30,10 +30,12 @@
   The first *M* in M/M/1 represents *A*, an exponential process, specifically a Markovian. #parbreak()
   The second *M* represents *S*, also an exponential process, specifically a Markovian. #parbreak()
   The *1* stands for *m*, the number of servers.
+
+  @slides5[p. 36, 37, 44]
 ]
 
 #task(label: "c")[
-  
+
 ]
 
 #pagebreak()
