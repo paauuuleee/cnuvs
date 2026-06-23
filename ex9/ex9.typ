@@ -34,8 +34,66 @@
   @slides5[p. 36, 37, 44]
 ]
 
-#task(label: "c")[
+#task(label: "Parameters for c - g")[
+    \
+    Arrival Rate: 25 req/sec #parbreak()
+    Service Time ($E(S)$): $1/mu = 0.02$ seconds #parbreak()
+    Service Rate ($mu$): $mu = 50$ req/sec #parbreak()
+]
 
+#task(label: "c")[
+  The average system time represents the total time a request spends in the system (waiting time + service time).
+  \
+  Formula:
+  $ W = 1 / (mu - lambda) $
+  \
+  Calculation:
+  $ W = 1 / (50 - 25) = 1 / 25 = 0.0400 " seconds" $
+  @slides5[p. 40]
+]
+
+#task(label: "d")[
+  Utilization measures the fraction of time that the server is busy handling requests.
+  \
+  Formula:
+  $ rho = lambda / mu $
+  \
+  Calculation:
+  $ rho = 25 / 50 = 0.5000 $
+  @slides5[p. 39]
+]
+
+#task(label: "e")[
+  This represents the total expected number of requests currently being served and waiting in the queue.
+  \
+  Formula:
+  $ L = lambda / (mu - lambda) = rho / (1 - rho) $
+  \
+  Calculation:
+  $ L = 25 / (50 - 25) = 25 / 25 = 1.0000 " request" $
+  @slides5[p. 40]
+]
+
+#task(label: "f")[
+  The probability of having exactly $n$ customers/requests in a steady-state M/M/1 system follows a geometric distribution.
+  \
+  Formula:
+  $ P_n = (1 - rho) rho^n $
+  \
+  Calculation for $n = 4$:
+  $ P_4 = (1 - 0.5) times (0.5)^4 = 0.5 times 0.0625 = 0.0313 $
+  @slides5[p. 39]
+]
+
+#task(label: "g")[
+  The probability that the server is completely idle is $P_0 = 1 - rho$. Over a time interval $T$, the expected total idle duration is the idle probability multiplied by $T$.
+  \
+  Formula:
+  $ I = (1 - rho) times T $
+  \
+  Calculation: \
+  First, convert the time interval to seconds: $T = 6 " minutes" times 60 " seconds/minute" = 360 " seconds"$.
+  $ I = (1 - 0.5) times 360 = 180.0000 " seconds" $
 ]
 
 == Task 6
