@@ -47,5 +47,13 @@
   @slides6[p. 6, 7]
 ]
 
+== Task 5
+
+IPTV (Internet Protocol Television) is a application of network multicast, used by telecom providers to stream live TV to millions of households simultaneously. Instead of sending individual streams to every home, the broadcaster injects a single video feed into the network, and edge routers use PIM and IGMP to duplicate the stream only where the network paths split.
+
+Because this live traffic relies on UDP to prevent lag, it cannot use standard TCP handshakes to recover lost data. To combat packet loss, IPTV systems implement Forward Error Correction, which adds redundant data to the stream so the viewer can automatically reconstruct missing packets on the fly. For severe packet loss that FEC cannot fix, networks utilize Unicast Retransmission, allowing the set-top box to request a quick, localized unicast burst of the missing frames from a nearby edge cache server. 
+
+@IPTV
+
 #pagebreak()
 #bibliography("source.yml", title: "Sources", style: "ieee")

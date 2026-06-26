@@ -3,3 +3,8 @@ slides6:
   author: Prof. Dr. Marco Zimmerling
   date: 2026
   title: "CNuvS 06: Multicast"
+
+IPTV:
+  type: Web
+  url: "https://www.cisco.com/en/US/technologies/tk869/tk769/technologies_white_paper0900aecd80730d28.html"
+  author: Cisco
