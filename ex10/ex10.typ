@@ -7,7 +7,7 @@
 
 #task(label: "a")[
   Multicast is preferable if the same data needs to be send to multiple recipients simultaneously. With seperate unicast transmissions the sender would quickly choke on it's bandwidth because the would be too much duplicate data. #parbreak()
-  The advantage of using multicast in these situations is efficiency and it's ressource saving capabilities. \
+  The advantage of using multicast in these situations is efficiency and it's ressource saving capabilities. 
   @slides6[p. 3, 9]
 ]
 
@@ -24,12 +24,12 @@
 ]
 
 #task(label: "c")[
-  When translating IP multicast addresses into Ethernet multicast addresses there is a small probability of collision where a whole 32 IP multicast group is mapped into one Ethernet multicast address. \
+  When translating IP multicast addresses into Ethernet multicast addresses there is a small probability of collision where a whole 32 IP multicast group is mapped into one Ethernet multicast address. 
   @slides6[p. 16]
 ]
 
 #task(label: "d")[
-  If a host does not respond to an IGMP query, the router impicates that the host left the group. This means that the host isn't recognized as a group member anymore and thus will not recieve any multicast messages anymore. \
+  If a host does not respond to an IGMP query, the router impicates that the host left the group. This means that the host isn't recognized as a group member anymore and thus will not recieve any multicast messages anymore. 
   @slides6[p. 19]
 ]
 
@@ -43,7 +43,7 @@
 ]
 
 #task(label: "e")[
-  We would rather use network multicast. Network multicast is the better option for this use case because in multicast via unicast the sending server would need to bear the load of 10000 connections. This would slow down the streaming bandwith of each connection drastically. In network multicast the load is distributed over multiple routers. \
+  We would rather use network multicast. Network multicast is the better option for this use case because in multicast via unicast the sending server would need to bear the load of 10000 connections. This would slow down the streaming bandwith of each connection drastically. In network multicast the load is distributed over multiple routers.
   @slides6[p. 6, 7]
 ]
 
@@ -52,7 +52,6 @@
 IPTV (Internet Protocol Television) is a application of network multicast, used by telecom providers to stream live TV to millions of households simultaneously. Instead of sending individual streams to every home, the broadcaster injects a single video feed into the network, and edge routers use PIM and IGMP to duplicate the stream only where the network paths split.
 
 Because this live traffic relies on UDP to prevent lag, it cannot use standard TCP handshakes to recover lost data. To combat packet loss, IPTV systems implement Forward Error Correction, which adds redundant data to the stream so the viewer can automatically reconstruct missing packets on the fly. For severe packet loss that FEC cannot fix, networks utilize Unicast Retransmission, allowing the set-top box to request a quick, localized unicast burst of the missing frames from a nearby edge cache server. 
-
 @IPTV
 
 #pagebreak()
