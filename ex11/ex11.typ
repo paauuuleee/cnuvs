@@ -21,7 +21,9 @@
 ]
 
 #task(label: "c")[
-  
+  The mechanism causing this is DNS caching. Users that have a valid Resource Record will access the old website until the TTL is over. This helps performance since the user doesn't have to request a domain resolve everytime which could take a while depending on where the DNS-Server is located. #parbreak()
+  The delay could be resolved by lowering the TTL to for example 5 minutes. Then wait for the duration of the old TTL. After this the updated IP would propagate worldwide within 5 minutes. \
+  @slides6[p. 24]
 ]
 
 #pagebreak()
