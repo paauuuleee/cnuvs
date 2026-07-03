@@ -15,6 +15,12 @@
 ]
 
 #task(label: "b")[
+  In an iterative request query a server replies with the name of the server to contact if itself can't resolve the requested domain. #parbreak()
+  In a recursive request query the burden of name resolution lies on the contacted name server. #parbreak()
+  @slides6[p. 26, 27]  
+]
+
+#task(label: "c")[
   
 ]
 
