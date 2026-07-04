@@ -41,7 +41,9 @@
 ]
 
 #task(label: "c")[
-  
+  "HTTP 429 Too Many Requests" indicates that the client has exceeded the server's rate limits. #parbreak()
+  The server should include the Retry-After header to tell the client how long to wait before trying again. #parbreak()
+  @mdn429 @mdnretry
 ]
 
 #pagebreak()

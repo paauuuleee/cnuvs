@@ -6,7 +6,7 @@ slides6:
 
 mdnwebdocs:
   type: Web
-  auhtor: MDN 
+  author: MDN 
   url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP"
   date: 2026
 
@@ -14,4 +14,16 @@ cloudflare:
   type: Web
   author: Cloudflare
   url: "https://www.cloudflare.com/learning/performance/what-is-http3/"
+  date: 2026
+
+mdn429:
+  type: Web
+  author: MDN
+  url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+  date: 2026
+
+mdnretry:
+  type: Web
+  author: MDN
+  url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After"
   date: 2026
