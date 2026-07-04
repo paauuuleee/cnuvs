@@ -3,3 +3,15 @@ slides6:
   author: Prof. Dr. Marco Zimmerling
   date: 2026
   title: "CNuvS 07: Application Layer"
+
+mdnwebdocs:
+  type: Web
+  auhtor: MDN 
+  url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP"
+  date: 2026
+
+cloudflare:
+  type: Web
+  author: Cloudflare
+  url: "https://www.cloudflare.com/learning/performance/what-is-http3/"
+  date: 2026

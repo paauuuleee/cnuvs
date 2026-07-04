@@ -26,5 +26,23 @@
   @slides6[p. 24]
 ]
 
+== Task 5
+
+#task(label: "a")[
+  HTTP/1.1 requires requests on a single connection to be answered in the exact order they were sent. If the first request is slow, all subsequent requests are blocked and must wait in line. #parbreak()
+  HTTP/2 splits requests and responses into small frames and interleaves them over a single TCP connection. A slow image no longer blocks a fast stylesheet. #parbreak()
+  \
+  HTTP/3 replaces TCP with QUIC. QUIC handles streams natively at the transport layer. If a packet for one stream is lost, only that specific stream pauses. All other streams continue downloading without interruption. #parbreak()
+  @cloudflare @mdnwebdocs
+]
+
+#task(label: "b")[
+
+]
+
+#task(label: "c")[
+  
+]
+
 #pagebreak()
 #bibliography("source.yml", title: "Sources", style: "ieee")
