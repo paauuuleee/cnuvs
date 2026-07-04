@@ -37,7 +37,24 @@
 ]
 
 #task(label: "b")[
-
+  *Session creation:* #parbreak()
+  When a user visits the site, the browser sends an initial stateless HTTP request. Because no session exists yet, the server recognizes this as a new visitor. The server creates a unique Session ID and initializes a corresponding data record. #parbreak()
+  \
+  *Setting the Cookie:* #parbreak()
+  To establish the session, the server sends an HTTP response containing the Set-Cookie header line, which passes the Session ID to the browser. #parbreak()
+  \
+  Example: "Set-Cookie: session_id=xyz; Secure; HttpOnly" #parbreak()
+  \
+  *Maintaining the session:* #parbreak()
+  For every sequential click or request after that, the browser automatically reads its cookie store and includes that same Session ID in the Cookie header line of the HTTP request. #parbreak()
+  \
+  Example: "Cookie: session_id=xyz" #parbreak()
+  \
+  *Server-Side Lookup:* #parbreak()
+  When the server receives subsequent requests, it reads the Cookie header, extracts the Session ID, and uses it as a key to look up and update that specific user's stateful data record. #parbreak()
+  \
+  The actual data record is stored securely on the server side, while the browser only holds the Session ID. #parbreak()
+  @slides6[p. 49, 50]
 ]
 
 #task(label: "c")[
