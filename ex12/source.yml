@@ -3,3 +3,10 @@ slides7:
   author: Prof. Dr. Marco Zimmerling, TU Darmstadt
   date: 2026
   title: "CNuvS 07: Application Layer"
+
+churn:
+  type: web
+  date: 2026
+  author: Daniel Stutzbach, Reza Rejaie
+  url: "https://ix.cs.uoregon.edu/~reza/PUB/churn.pdf"
+  title: Understanding Churn in Peer-to-Peer Networks

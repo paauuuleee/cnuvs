@@ -16,5 +16,35 @@
   @slides7[p. 11, 12]
 ]
 
+#task(label: "c")[
+  The churn problem refers to the continuous, rapid, and unpredictable joining and leaving of nodes in the network. #parbreak()
+  This can cause data loss (if the leaving note holds data that other nodes may request) and inefficient routing since routes over the leaving node become inaccessible. #parbreak()
+  @churn
+]
+
+== Task 4
+
+#task(label: "a")[
+
+]
+
+#task(label: "b")[
+
+]
+
+#task(label: "c")[
+
+]
+
+== Task 5
+
+#task(label: "a")[
+
+]
+
+#task(label: "b")[
+
+]
+
 #pagebreak()
 #bibliography("source.yml", title: "Sources", style: "ieee")
