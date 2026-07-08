@@ -16,3 +16,9 @@ churn:
   author: Daniel Stutzbach, Reza Rejaie
   url: "https://ix.cs.uoregon.edu/~reza/PUB/churn.pdf"
   title: Understanding Churn in Peer-to-Peer Networks
+
+ntp:
+  type: web
+  date: 2026
+  url: "https://ubuntu.com/server/docs/explanation/networking/about-time-synchronisation/"
+  title: About time synchronization

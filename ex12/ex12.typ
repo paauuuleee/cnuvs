@@ -51,17 +51,78 @@
 ]
 
 #task(label: "c")[
-
+  Network Time Protocol: #parbreak()
+  Accurate time synchronization is critical for servers to ensure that financial transactions and database entries are recorded in the correct chronological order across distributed systems. Without it, debugging errors becomes incredibly difficult and security protocols like Kerberos or TLS certificates may fail due to clock drift. #parbreak()
+  @ntp
 ]
 
 == Task 5
 
 #task(label: "a")[
+  #align(center)[
+    #table(
+      columns: (0.6fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+      align: center + horizon,
 
+      stroke: (x, y) => (
+        top: none,
+        bottom: if y == 0 { 0.8pt + black } else { none },
+        left: if x > 0 { 0.5pt + black } else { none },
+        right: none
+      ),
+      inset: (x: 5pt, y: 6pt),
+
+      [$t$], [$C_0$], [$E_0$], [$C_1$], [$E_1$], [$C_2$], [$E_2$], [$C_3$], [$E_3$],
+
+      [0], [240], [],   [151], [],   [150], [],   [200], [],
+
+      [1], [241],    [a],  [152],    [b],  [150],    [],    [201],    [c],
+
+      [2], [242],    [d],  [152],    [],   [150],    [],    [202],    [e],
+
+      [3], [243],    [f],  [153],    [g],  [150],    [],    [202],    [],
+
+      [4], [244],    [h],  [203],    [i],  [150],    [],    [203],    [j],
+
+      [5], [244],    [],   [203],    [],   [154],    [k],   [204],    [l],
+
+      [6], [245],    [m],  [244],    [n],  [154],    [],    [204],    [],
+
+      [7], [245],    [],   [245],    [o],  [154],    [],    [204],    [],
+
+      [8], [245],    [],   [245],    [],   [204],    [p],   [204],    [],
+    )
+  ]
 ]
 
 #task(label: "b")[
-
+  #figure(
+    lamportclockgraph(
+      // events are written from left to right and top to botton
+      // e.g. Event P_0 at t=1 with 5 as count and event name "a"
+      // ("1","0","a","5")
+      events: (
+        ("1","0","a","10"),
+        ("1","1","b","3"),
+        ("1","2","c","5"),
+        ("2","0","d","11"),
+        ("2","1","e","6"),
+        ("2","2","f","6"),
+        ("3","2","g","12"),
+        ("4","0","h","12"),
+        ("4","1","i","11"),
+        ("4","2","j","13"),
+        ("5","2","k","14"),
+        ("6","0","l","15"),
+      ),
+      
+      // edges from event to event
+      edge(<c>,<e>,"->"),
+      edge(<d>,<g>,"->"),
+      edge(<a>,<i>,"->"),
+      edge(<k>,<l>,"->"),
+    )
+  )
 ]
 
 #pagebreak()
