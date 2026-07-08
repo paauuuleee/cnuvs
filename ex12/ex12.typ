@@ -25,7 +25,8 @@
 == Task 4
 
 #task(label: "a")[
-
+  No, the absolute clock values are not comparable. The durations are. #parbreak()
+  @slides6[p. 8]
 ]
 
 #task(label: "b")[

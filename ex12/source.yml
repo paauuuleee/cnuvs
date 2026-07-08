@@ -4,6 +4,12 @@ slides7:
   date: 2026
   title: "CNuvS 07: Application Layer"
 
+slides6:
+  type: Reference
+  author: Zsolt Istvan
+  date: 2026
+  title: "Time in Distributed Systems, Primary-Backup Replication"
+
 churn:
   type: web
   date: 2026
