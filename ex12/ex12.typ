@@ -12,7 +12,8 @@
 ]
 
 #task(label: "b")[
-  
+  Gnutella is a file transfer protocol. A sender sends a query message over all existing edges (valid TCP connections). Every peer forwards the query message to all it's edges and returns a query hit over the reverse path if it got the desired data. #parbreak()
+  @slides7[p. 11, 12]
 ]
 
 #pagebreak()
