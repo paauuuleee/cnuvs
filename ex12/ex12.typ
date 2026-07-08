@@ -47,6 +47,7 @@
   Clock set = $4700 + 1/2 * 520$ #parbreak()
   Clock set = $4700 + 260$ #parbreak()
   Clock set = $4960$ #parbreak()
+  @slides6[p. 9]
 ]
 
 #task(label: "c")[
