@@ -30,7 +30,23 @@
 ]
 
 #task(label: "b")[
-
+  P sets it's clock to 4960. #parbreak()
+  \
+  This results from: $T_S_2$ + $1/2 * $ message transmission delay#parbreak()
+  \
+  Message transmission delay: #parbreak()
+  #sym.delta = $#sym.delta _"req" + #sym.delta _"resp" = (T_C_2 - T_C_1) - (T_S_2 - T_S_1)$ #parbreak()
+  #sym.delta = $(4920 - 4200) - (4700 - 4500)$
+  #parbreak()
+  #sym.delta = $720 - 200$
+  #parbreak()
+  #sym.delta = $520$
+  #parbreak()
+  \
+  Clock set = $T_S_2$ + $1/2 * $ #sym.delta #parbreak()
+  Clock set = $4700 + 1/2 * 520$ #parbreak()
+  Clock set = $4700 + 260$ #parbreak()
+  Clock set = $4960$ #parbreak()
 ]
 
 #task(label: "c")[
