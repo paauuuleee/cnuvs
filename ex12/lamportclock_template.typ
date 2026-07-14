@@ -1,6 +1,6 @@
 #import "@preview/fletcher:0.5.8": diagram, node, edge
 
-#let lamportclockgraph(x_stretch: 1.5,y_stretch: 2, darkmode: false, processcount: 3, timecount: 10, events: (), ..args) = diagram(
+#let lamportclockgraph(x_stretch: 1.5,y_stretch: 2, darkmode: false, processcount: 3, timecount: 6, events: (), ..args) = diagram(
     let edge_color = if darkmode {white} else {rgb(29,31,33)},
     let neg_edge_color = if darkmode {rgb(29,31,33)} else {white},
     node-inset: 3pt,
